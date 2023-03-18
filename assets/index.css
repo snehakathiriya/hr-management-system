@@ -1,0 +1,271 @@
+*{
+
+  box-sizing: border-box;
+
+ }
+ 
+ body{
+  /* min-height: 100vh; */
+  background: white;
+  color: white;
+  /* background-size: cover;
+  background-position: center; */
+  margin: 0;
+  padding: 0;
+ }
+ 
+ .side-bar{
+  background: #484c7f;
+  backdrop-filter: blur(15px);
+  /* width: 18%; */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  /* transition-property: left; */
+  position: sticky;
+  border-radius: 30px;
+  /* margin-top: 1%; */
+  /* margin-left: 2%; */
+  display: block;
+ }
+/* 
+ .itemdash1drop{
+  font-size:5px;
+ } */
+
+ h1{
+ 
+   text-align: center;
+   font-weight: 500;
+   font-size: 25px;
+   padding-bottom: 13px;
+   font-family: sans-serif;
+   letter-spacing: 2px;
+ }
+ 
+ .side-bar .menu{
+  width: 100%;
+  margin-top: 30px;
+ }
+ 
+ .side-bar .menu .item{
+  position: relative;
+  cursor: pointer;
+ }
+ 
+ .side-bar .menu .item a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  /* line-height: 60px; */
+ }
+ 
+ .side-bar .menu .item a:hover{
+  color: orange;
+  transition: 0.3s ease;
+ }
+ 
+ .side-bar .menu .item i{
+  margin-right: 15px;
+ }
+ 
+ .side-bar .menu .item a .dropdown{
+  position: absolute;
+  right: 0;
+  /* margin: 20px; */
+  transition: 0.3s ease;
+ }
+ 
+ .side-bar .menu .item .sub-menu{
+  background: #484c7f;
+  display: none;
+ }
+ 
+ /* .side-bar .menu .item .sub-menu a{
+  padding-left: 80px;
+ } */
+ 
+ .rotate{
+  transform: rotate(90deg);
+ }
+ 
+
+ 
+ .main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+ }
+ 
+ .main h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  text-align: center;
+  line-height: 80px;
+ }
+ 
+ /* @media (max-width: 900px){
+  .main h1{
+    font-size: 40px;
+    line-height: 60px;
+  }
+ } */
+ /* img{
+   width: 100px;
+   margin: 15px;
+   border-radius: 50%;
+   margin-left: 70px;
+   border: 3px solid #b4b8b9;
+ } */
+
+
+ .check{
+  color: #484c7f;
+  /* font-size: 40px; */
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+ }
+
+ /* btncss */
+
+ .sidee-bar{
+  background: #484c7f;
+  backdrop-filter: blur(15px);
+  /* width: 18%; */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  /* transition-property: left; */
+  position: sticky;
+  border-radius: 30px;
+  /* margin-top: 1%; */
+  /* margin-left: 2%; */
+  display: block;
+ }
+/* 
+ .itemdash1drop{
+  font-size:5px;
+ } */
+
+ 
+ .sidee-bar .menu{
+  width: 100%;
+  margin-top: 30px;
+ }
+ 
+ .sidee-bar .menu .item{
+  position: relative;
+  cursor: pointer;
+ }
+ 
+ .sidee-bar .menu .item a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  /* line-height: 60px; */
+ }
+ 
+ .sidee-bar .menu .item a:hover{
+  color: orange;
+  transition: 0.3s ease;
+ }
+ 
+ .sidee-bar .menu .item i{
+  margin-right: 15px;
+ }
+ 
+ .sidee-bar .menu .item a .dropdown{
+  position: absolute;
+  right: 0;
+  /* margin: 20px; */
+  transition: 0.3s ease;
+ }
+ 
+ .sidee-bar .menu .item .sub-menu{
+  background: #484c7f;
+  display: none;
+ }
+
+@media screen and (max-width:1199px) and (min-width:400px){
+  .side-bar{
+   display: none;
+   }
+}
+
+ /* sideconcent */
+ .applications{
+background-color: #484c7f;
+color: white;
+border-radius: 3px;
+ }
+ 
+ .appicon{
+  color: black;
+  background-color: white;
+  
+ }
+
+
+/* lastteb */
+.lastcardd{
+  background-color: #f1c8db !important  ;
+  border-radius: 5px;
+}
+
+.cardimg1{
+  width: 15%;
+}
+
+.carditem{
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+}
+
+.cardnumber{
+color: #808693;
+font-size: 14.7px;
+}
+
+/* sidebar */
+.inticon{
+  background-color: #a0d9b4;
+  border-radius: 50%;
+}
+
+.hired{
+  color: #808693;
+}
+
+
+.twobar{
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+
+.employemenu{
+  border: 1px solid #c8c8c8;
+}
+
+.sideimg{
+  border: 1px solid #c8c8c8;
+  width: 15%;
+}
+/* 
+
+<span class=" "><img
+class=" rounded-circle  w-50 sideimg p-1"
+src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg"
+alt="profile"></span> */
