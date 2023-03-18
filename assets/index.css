@@ -263,9 +263,10 @@ font-size: 14.7px;
   border: 1px solid #c8c8c8;
   width: 15%;
 }
-/* 
-
-<span class=" "><img
-class=" rounded-circle  w-50 sideimg p-1"
-src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg"
-alt="profile"></span> */
+.weight_user{
+  width: 10%;
+}
+.profile{
+  width: 8%;
+  height: 5%;
+}

@@ -22,13 +22,64 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"
     integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Highcharts Tutorial</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  </script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <style>
+    #chartdiv {
+      width: 100%;
+      height: 270px;
+    }
+#container{
+  height: 200px;
+}
 
-    <style>
-      #chartdiv {
-        width: 100%;
-        height: 500px;
-      }
-      </style>
+    .highcharts-figure,
+.highcharts-data-table table {
+  min-width: 360px;
+  max-width: 700px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  /* max-width: 500px; */
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+  </style>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 </head>
 
@@ -170,16 +221,158 @@
       </div>
 
       <div class="col-xxl-10 col-xl-10 col-lg-12 col-md-12 col-sm-12">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">.
+            <!-- search -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+         
+          <div class="d-flex">
+              <!-- help -->
+            
+              <i class="bi bi-info-square-fill "></i>
+
+              <!-- user -->
+              
+                <img src="./assets/photos/user.jpg " class="weight_user " alt="">
+                <i class="bi bi-plus-circle-fill fs-3"></i>
+              
+  
+              <!-- notification -->
+              <ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-bell fs-3  pt-2"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item Notifications fw-semibold" href="#">Notifications <span
+                          class="float-end fw-semibold">11</span> </a>
+                    </li>
+                    <hr>
+  
+                    <!-- 1 -->
+                    <li><a class="dropdown-item" href="#">
+                        <img src="./assets/photos/download.jpg" class="rounded-circle float-start" alt="...">
+  
+                        <div class="colorO">
+                          <b>Dylan Hunter</b>
+                          <span class=" fw-light float-end ">2MIN</span>
+  
+                          <div class=" fw-light  ms-5">
+                            Added 2021-02-19 my-Task ui/ux Design
+                          </div>
+                        </div>
+                        <div class="ps-5">
+                          <span class="badge text-bg-success ">Review</span>
+                        </div>
+  
+                        <hr>
+                      </a></li>
+  
+                    <!-- 2 -->
+                    <li><a class="dropdown-item" href="#">
+                        <img src="./assets/photos/download2.jpg" class="rounded-circle float-start" alt="...">
+  
+                        <div class="colorO">
+                          <b>Diane Fisher</b>
+                          <span class=" fw-light float-end ">13MIN</span>
+  
+                          <div class=" fw-light  ms-5">
+                            Task added Get Started with Fast Cad project
+                          </div>
+                        </div>
+                        <hr>
+                      </a></li>
+                    <!-- 3 -->
+                    <li><a class="dropdown-item" href="#">
+                        <img src="./assets/photos/download (1).jpg" class="rounded-circle float-start" alt="...">
+  
+                        <div class="colorO">
+                          <b>Andrea Gill</b>
+                          <span class=" fw-light float-end ">1HR</span>
+  
+                          <div class=" fw-light  ms-5">
+                            Quality Assurance Task Completed
+                          </div>
+                        </div>
+                        <hr>
+                      </a></li>
+                    <!-- 4 -->
+                    <li><a class="dropdown-item" href="#">
+                        <img src="./assets/photos/download (2).jpg" class="rounded-circle float-start" alt="...">
+  
+                        <div class="colorO">
+                          <b>Diane Fisher</b>
+                          <span class=" fw-light float-end ">13MIN</span>
+  
+                          <div class=" fw-light  ms-5">
+                            Add New Project for App Developemnt
+                          </div>
+                        </div>
+                        <hr>
+                      </a></li>
+                    <!-- 5 -->
+                    <li><a class="dropdown-item" href="#">
+                        <img src="./assets/photos/download (3).jpg" class="rounded-circle float-start" alt="...">
+  
+                        <div class="colorO">
+                          <b>Andrea Gill</b>
+                          <span class=" fw-light float-end ">1HR</span>
+  
+                          <div class=" fw-light  ms-5">
+                            Add Timesheet For Rhinestone project
+                          </div>
+                        </div>
+                        <hr>
+                      </a></li>
+                    <!-- 6 -->
+                    <li><a class="dropdown-item" href="#">
+                        <img src="./assets/photos/download (4).jpg" class="rounded-circle float-start" alt="...">
+  
+                        <div class="colorO">
+                          <b>Zoe Wright</b>
+                          <span class=" fw-light float-end ">1DAY</span>
+  
+                          <div class=" fw-light  ms-5">
+                            Add Calander Event
+                          </div>
+                        </div>
+                        <hr>
+                      </a></li>
+  
+                    <li><a class="dropdown-item colorO all text-center" href="#">
+                        View all notifications</a></li>
+                  </ul>
+                </li>
+              </ul> 
+  
+              <!-- profile -->
+              <div class="">
+                <span class="d-block">
+                  <b> Dylan Hunter</b> 
+                  <p>Admin Profile</p></span>
+                <img src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg " class="profile  border rounded " alt="">
+              </div>
+          </div>
+
+          </div>
+        </nav>
         <div class="container">
+
           <div class="row">
             <div class="col-8">
               <!-- col-xl-7 col-lg-8 col-md-8 col-sm-8 -->
-              <div class="col-12">
-                <div class="row">
-                  <div>
-                    <canvas id="myChart"></canvas>
-                  </div>
+
+              <div class="col-12 ">
+                <div class="row ">
+                  <figure class="highcharts-figure ">
+                    <div id="container"></div>
+                  </figure>
+                  <!-- <div id = "container" style = "width: 550px; height: 400px; margin: 0 auto"></div> -->
                 </div>
+
               </div>
 
               <div class="row mt-5 ">
@@ -230,28 +423,25 @@
                 </div>
 
                 <div class="col-5 ms-4 card">
-                  <!-- <main>
-                    <div class="container-fluid my-4">
-                      <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col-md-4">
-                              <div id="chart"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </main> -->
-                  <h5 class="mt-3 mb-4 fs-6 fw-semibold">Employees Availability</h5>
+
+                  <h5 class="mt-3 mb-4 fs-6 fw-semibold">Total Employees <span>423</span> </h5>
 
                   <div class="row">
-                    <div id="chartdiv"></div>
+                    <div id="chartdiv" class="w-75"></div>
                   </div>
 
                 </div>
               </div>
+              <div class="col-12">
+                <div class="row">
+                  <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </div>
+              </div>
             </div>
+
+
 
             <div class="col-4 ">
               <!-- col-xl-3 col-lg-4 col-md-4 col-sm-4 -->
@@ -325,111 +515,118 @@
                       <div class="flex-grow-1">
                         <div class="py-2 d-flex align-items-center border-bottom flex-wrap">
                           <div class="d-flex align-items-center flex-fill">
-                            <img
-                              class="rounded-circle   sideimg p-1"
-                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg" alt="profile">
+                            <img class="rounded-circle   sideimg p-1"
+                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg"
+                              alt="profile">
 
                             <div class="d-flex flex-column ps-3">
                               <h6 class="fw-bold mb-0 small-14">Natalie Gibson</h6>
                               <span class="text-muted">Ui/UXDesigner</span>
                             </div>
-                            
-                          <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 1.30 - 1:30</div>
+
+                            <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 1.30 -
+                              1:30</div>
                           </div>
                         </div>
 
                         <div class="py-2 d-flex align-items-center border-bottom flex-wrap">
                           <div class="d-flex align-items-center flex-fill">
-                            <img
-                              class="rounded-circle   sideimg p-1"
-                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar9.750b25a3.jpg" alt="profile">
+                            <img class="rounded-circle   sideimg p-1"
+                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar9.750b25a3.jpg"
+                              alt="profile">
 
                             <div class="d-flex flex-column ps-3">
                               <h6 class="fw-bold mb-0 small-14">Peter Piperg</h6>
                               <span class="text-muted">Web Design</span>
                             </div>
-                            
-                          <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 9.00 - 1:30</div>
+
+                            <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 9.00 -
+                              1:30</div>
                           </div>
                         </div>
 
 
                         <div class="py-2 d-flex align-items-center border-bottom flex-wrap">
                           <div class="d-flex align-items-center flex-fill">
-                            <img
-                              class="rounded-circle   sideimg p-1"
-                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar12.eab92b55.jpg" alt="profile">
+                            <img class="rounded-circle   sideimg p-1"
+                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar12.eab92b55.jpg"
+                              alt="profile">
 
                             <div class="d-flex flex-column ps-3">
                               <h6 class="fw-bold mb-0 small-14">Robert Young</h6>
                               <span class="text-muted">PHP Developer</span>
                             </div>
-                            
-                          <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 1.30 - 2:30</div>
+
+                            <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 1.30 -
+                              2:30</div>
                           </div>
                         </div>
 
 
                         <div class="py-2 d-flex align-items-center border-bottom flex-wrap">
                           <div class="d-flex align-items-center flex-fill">
-                            <img
-                              class="rounded-circle   sideimg p-1"
-                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg" alt="profile">
+                            <img class="rounded-circle   sideimg p-1"
+                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg"
+                              alt="profile">
 
                             <div class="d-flex flex-column ps-3">
                               <h6 class="fw-bold mb-0 small-14">Victoria Vbell</h6>
                               <span class="text-muted">IOS Developer</span>
                             </div>
-                            
-                          <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 2.00 - 3:30</div>
+
+                            <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 2.00 -
+                              3:30</div>
                           </div>
                         </div>
 
 
                         <div class="py-2 d-flex align-items-center border-bottom flex-wrap">
                           <div class="d-flex align-items-center flex-fill">
-                            <img
-                              class="rounded-circle   sideimg p-1"
-                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar7.207e668f.jpg" alt="profile">
+                            <img class="rounded-circle   sideimg p-1"
+                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar7.207e668f.jpg"
+                              alt="profile">
 
                             <div class="d-flex flex-column ps-3">
                               <h6 class="fw-bold mb-0 small-14">Mary Butler</h6>
                               <span class="text-muted">Writer</span>
                             </div>
-                            
-                          <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 4.00 - 4:30</div>
+
+                            <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 4.00 -
+                              4:30</div>
                           </div>
                         </div>
 
 
                         <div class="py-2 d-flex align-items-center border-bottom flex-wrap">
                           <div class="d-flex align-items-center flex-fill">
-                            <img
-                              class="rounded-circle   sideimg p-1"
-                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar9.750b25a3.jpg" alt="profile">
+                            <img class="rounded-circle   sideimg p-1"
+                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar9.750b25a3.jpg"
+                              alt="profile">
 
                             <div class="d-flex flex-column ps-3">
                               <h6 class="fw-bold mb-0 small-14">Young</h6>
                               <span class="text-muted">Ui/UXDesigner</span>
                             </div>
-                            
-                          <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 1.30 - 1:30</div>
+
+                            <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 1.30 -
+                              1:30</div>
                           </div>
                         </div>
 
 
                         <div class="py-2 d-flex align-items-center border-bottom flex-wrap">
                           <div class="d-flex align-items-center flex-fill">
-                            <img
-                              class="rounded-circle   sideimg p-1"
-                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg" alt="profile">
+                            <img class="rounded-circle   sideimg p-1"
+                              src="https://pixelwibes.com/template/my-task/react/static/media/avatar2.3ef6eaa7.jpg"
+                              alt="profile">
 
                             <div class="d-flex flex-column ps-3">
                               <h6 class="fw-bold mb-0 small-14">Natalie Gibson</h6>
                               <span class="text-muted">Ui/UXDesigner</span>
                             </div>
-                            
-                          <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 1.30 - 1:30</div>
+
+                            <div class="time-block text-truncate ms-5 ps-5"><i class="icofont-clock-time"></i> 1.30 -
+                              1:30</div>
                           </div>
                         </div>
 
@@ -538,12 +735,10 @@
         </div>
 
       </div>
-      
+
     </div>
   </div>
-  <!-- <section class="main">
-    <h1>Sidebar Menu With<br>Sub-Menus</h1>
-  </section> -->
+
 
   <nav class="navbar  d-xxl-none d-xl-none d-lg-inline-block d-md-inline-block d-sm-inline-block fixed-top">
     <div class="container-fluid">
@@ -697,109 +892,259 @@
   </nav>
 
 
-
   <script src="assets/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
     "></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
 
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart');
 
-
-    <script>
-  const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
         }
       }
-    }
-  });
+    });
 
 
-  am5.ready(function() {
+    // roundchart
+    am5.ready(function () {
 
-// Create root element
-// https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdiv");
-
-
-// Set themes
-// https://www.amcharts.com/docs/v5/concepts/themes/
-root.setThemes([
-  am5themes_Animated.new(root)
-]);
+      // Create root element
+      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+      var root = am5.Root.new("chartdiv");
 
 
-// Create chart
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
-var chart = root.container.children.push(am5percent.PieChart.new(root, {
-  layout: root.verticalLayout,
-  innerRadius: am5.percent(50)
-}));
+      // Set themes
+      // https://www.amcharts.com/docs/v5/concepts/themes/
+      root.setThemes([
+        am5themes_Animated.new(root)
+      ]);
 
 
-// Create series
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
-var series = chart.series.push(am5percent.PieSeries.new(root, {
-  valueField: "value",
-  categoryField: "category",
-  alignLabels: false
-}));
-
-series.labels.template.setAll({
-  textType: "circular",
-  centerX: 0,
-  centerY: 0
-});
+      // Create chart
+      // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+      var chart = root.container.children.push(am5percent.PieChart.new(root, {
+        layout: root.verticalLayout,
+        innerRadius: am5.percent(50)
+      }));
 
 
-// Set data
-// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-series.data.setAll([
-  { value: 10, category: "One" },
-  { value: 9, category: "Two" },
-  { value: 6, category: "Three" },
-  { value: 5, category: "Four" },
-  { value: 4, category: "Five" },
-  { value: 3, category: "Six" },
-  { value: 1, category: "Seven" },
-]);
+      // Create series
+      // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+      var series = chart.series.push(am5percent.PieSeries.new(root, {
+        valueField: "value",
+        categoryField: "category",
+        alignLabels: false
+      }));
+
+      series.labels.template.setAll({
+        textType: "circular",
+        centerX: 0,
+        centerY: 0
+      });
 
 
-// Create legend
-// https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
-var legend = chart.children.push(am5.Legend.new(root, {
-  centerX: am5.percent(50),
-  x: am5.percent(50),
-  marginTop: 15,
-  marginBottom: 15,
-}));
+      // Set data
+      // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+      series.data.setAll([
+        { value: 10, category: "One" },
+        { value: 9, category: "Two" },
+        // { value: 6, category: "Three" },
+        // { value: 5, category: "Four" },
+        // { value: 4, category: "Five" },
+        // { value: 3, category: "Six" },
+        // { value: 1, category: "Seven" },
+      ]);
 
-legend.data.setAll(series.dataItems);
+
+      // Create legend
+      // https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
+      var legend = chart.children.push(am5.Legend.new(root, {
+        centerX: am5.percent(50),
+        x: am5.percent(50),
+        marginTop: 15,
+        marginBottom: 15,
+      }));
+
+      legend.data.setAll(series.dataItems);
 
 
-// Play initial series animation
-// https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
-series.appear(1000, 100);
+      // Play initial series animation
+      // https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+      series.appear(1000, 100);
 
-}); // end am5.ready()
-</script>
+    }); // end am5.ready()
+
+
+  </script>
+  <script>
+    Highcharts.getJSON(
+  'https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/usdeur.json',
+  function (data) {
+
+    Highcharts.chart('container', {
+      chart: {
+        zoomType: 'x'
+      },
+      title: {
+        text: '',
+        align: 'left'
+      },
+      subtitle: {
+        text: document.ontouchstart === undefined ?
+          '' : '',
+        align: 'left'
+      },
+      xAxis: {
+        type: 'datetime'
+      },
+      yAxis: {
+        title: {
+          text: ''
+        }
+      },
+      legend: {
+        enabled: false
+      },
+      plotOptions: {
+        area: {
+          fillColor: {
+            linearGradient: {
+              x1: 0,
+              y1: 0,
+              x2: 0,
+              y2: 1
+            },
+            stops: [
+              [0, Highcharts.getOptions().colors[0]],
+              [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+            ]
+          },
+          marker: {
+            radius: 2
+          },
+          lineWidth: 1,
+          states: {
+            hover: {
+              lineWidth: 1
+            }
+          },
+          threshold: null
+        }
+      },
+
+      series: [{
+        type: 'area',
+        name: 'USD to EUR',
+        data: data
+      }]
+    });
+  }
+);
+  </script>
+  <!-- <script language="JavaScript">
+    $(document).ready(function () {
+      var chart = {
+        type: 'spline'
+      };
+      var title = {
+        text: 'Monthly Average Temperature'
+      };
+      var subtitle = {
+        text: 'Source: WorldClimate.com'
+      };
+      var xAxis = {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+          'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      };
+      var yAxis = {
+        title: {
+          text: 'Temperature'
+        },
+        labels: {
+          formatter: function () {
+            return this.value + '\xB0';
+          }
+        },
+        lineWidth: 2
+      };
+      var tooltip = {
+        crosshairs: true,
+        shared: true
+      };
+      var plotOptions = {
+        spline: {
+          marker: {
+            radius: 4,
+            lineColor: '#666666',
+            lineWidth: 1
+          }
+        }
+      };
+      var series = [
+        {
+          name: 'Tokyo',
+          marker: {
+            symbol: 'square'
+          },
+          data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
+            y: 26.5,
+            marker: {
+              symbol: 'url(http://www.highcharts.com/demo/gfx/sun.png)'
+            }
+          }, 23.3, 18.3, 13.9, 9.6]
+        },
+        {
+          name: 'London',
+          marker: {
+            symbol: 'diamond'
+          },
+          data: [{
+            y: 3.9,
+            marker: {
+              symbol: 'url(http://www.highcharts.com/demo/gfx/snow.png)'
+            }
+          }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+        }
+      ];
+
+      var json = {};
+      json.chart = chart;
+      json.title = title;
+      json.subtitle = subtitle;
+      json.tooltip = tooltip;
+      json.xAxis = xAxis;
+      json.yAxis = yAxis;
+      json.series = series;
+      json.plotOptions = plotOptions;
+      $('#container').highcharts(json);
+    });
+  </script> -->
 </body>
 
 </html>
